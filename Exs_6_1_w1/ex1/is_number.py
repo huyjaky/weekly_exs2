@@ -1,10 +1,10 @@
-
-
-def calc(x, is_int = False):
+def calc(x, is_int=False):
     try:
-        if (is_int == False): float(x)
-        else: int(x)
+        if is_int == False:
+            float(x)
+        else:
+            int(x)
 
-    except ValueError:    
+    except ValueError:
         return False
     return True
